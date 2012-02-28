@@ -14,8 +14,7 @@
 		5FB82EB114FBB505009DD3E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82EB014FBB505009DD3E3 /* main.m */; };
 		5FB82EB514FBB505009DD3E3 /* UICircularProgressViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82EB414FBB505009DD3E3 /* UICircularProgressViewAppDelegate.m */; };
 		5FB82EB814FBB505009DD3E3 /* UICircularProgressViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82EB714FBB505009DD3E3 /* UICircularProgressViewViewController.m */; };
-		5FB82EBB14FBB505009DD3E3 /* UICircularProgressViewViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController_iPhone.xib */; };
-		5FB82EBE14FBB505009DD3E3 /* UICircularProgressViewViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB82EBC14FBB505009DD3E3 /* UICircularProgressViewViewController_iPad.xib */; };
+		5FB82EBB14FBB505009DD3E3 /* UICircularProgressViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController.xib */; };
 		5FDB084414FCE23400A3E509 /* UICircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB084314FCE23400A3E509 /* UICircularProgressView.m */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +31,7 @@
 		5FB82EB414FBB505009DD3E3 /* UICircularProgressViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICircularProgressViewAppDelegate.m; sourceTree = "<group>"; };
 		5FB82EB614FBB505009DD3E3 /* UICircularProgressViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICircularProgressViewViewController.h; sourceTree = "<group>"; };
 		5FB82EB714FBB505009DD3E3 /* UICircularProgressViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICircularProgressViewViewController.m; sourceTree = "<group>"; };
-		5FB82EBA14FBB505009DD3E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UICircularProgressViewViewController_iPhone.xib; sourceTree = "<group>"; };
-		5FB82EBD14FBB505009DD3E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UICircularProgressViewViewController_iPad.xib; sourceTree = "<group>"; };
+		5FB82EBA14FBB505009DD3E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UICircularProgressViewViewController.xib; sourceTree = "<group>"; };
 		5FDB084214FCE23400A3E509 /* UICircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularProgressView.h; sourceTree = "<group>"; };
 		5FDB084314FCE23400A3E509 /* UICircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircularProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +85,7 @@
 				5FB82EB414FBB505009DD3E3 /* UICircularProgressViewAppDelegate.m */,
 				5FB82EB614FBB505009DD3E3 /* UICircularProgressViewViewController.h */,
 				5FB82EB714FBB505009DD3E3 /* UICircularProgressViewViewController.m */,
-				5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController_iPhone.xib */,
-				5FB82EBC14FBB505009DD3E3 /* UICircularProgressViewViewController_iPad.xib */,
+				5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController.xib */,
 				5FB82EAB14FBB505009DD3E3 /* Supporting Files */,
 			);
 			name = "Test Project";
@@ -169,8 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB82EAF14FBB505009DD3E3 /* InfoPlist.strings in Resources */,
-				5FB82EBB14FBB505009DD3E3 /* UICircularProgressViewViewController_iPhone.xib in Resources */,
-				5FB82EBE14FBB505009DD3E3 /* UICircularProgressViewViewController_iPad.xib in Resources */,
+				5FB82EBB14FBB505009DD3E3 /* UICircularProgressViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,20 +195,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController_iPhone.xib */ = {
+		5FB82EB914FBB505009DD3E3 /* UICircularProgressViewViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5FB82EBA14FBB505009DD3E3 /* en */,
 			);
-			name = UICircularProgressViewViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		5FB82EBC14FBB505009DD3E3 /* UICircularProgressViewViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FB82EBD14FBB505009DD3E3 /* en */,
-			);
-			name = UICircularProgressViewViewController_iPad.xib;
+			name = UICircularProgressViewViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +260,7 @@
 				GCC_PREFIX_HEADER = "UICircularProgressView/UICircularProgressView-Prefix.pch";
 				INFOPLIST_FILE = "UICircularProgressView/UICircularProgressView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,6 +272,7 @@
 				GCC_PREFIX_HEADER = "UICircularProgressView/UICircularProgressView-Prefix.pch";
 				INFOPLIST_FILE = "UICircularProgressView/UICircularProgressView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

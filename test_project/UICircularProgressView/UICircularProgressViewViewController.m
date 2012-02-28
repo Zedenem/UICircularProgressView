@@ -37,6 +37,7 @@
 @end
 
 @implementation UICircularProgressViewViewController
+
 @synthesize barStyleProgressView = _barStyleProgressView;
 @synthesize defaultStyleProgressView = _defaultStyleProgressView;
 @synthesize circularProgressView = _circularProgressView;
@@ -64,14 +65,18 @@
 
 - (IBAction)setProgressTintColor:(UIButton *)sender {
 	[self.circularProgressView setProgressTintColor:sender.titleLabel.textColor];
-	[self.barStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
-	[self.defaultStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
+	if ([self.barStyleProgressView respondsToSelector:@selector(setProgressTintColor:)]) {
+		[self.barStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
+		[self.defaultStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
+	}
 }
 
 - (IBAction)setTrackTintColor:(UIButton *)sender {
 	[self.circularProgressView setTrackTintColor:sender.titleLabel.textColor];
-	[self.barStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
-	[self.defaultStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
+	if ([self.barStyleProgressView respondsToSelector:@selector(setTrackTintColor:)]) {
+		[self.barStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
+		[self.defaultStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
+	}
 }
 
 - (IBAction)setProgressViewStyleToCircle {
