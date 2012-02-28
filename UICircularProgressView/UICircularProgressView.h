@@ -3,7 +3,7 @@
 ///  UICircularProgressView
 //
 //  Created by Zouhair Mahieddine on 27/02/12.
-//  Copyright (c) 2012 Zouhair Mahieddine.
+///  Copyright (c) 2012 Zouhair Mahieddine.
 //  http://www.zedenem.com
 //  
 //  This file is part of the UICircularProgressView Library.
@@ -24,6 +24,12 @@
 
 #import <UIKit/UIKit.h>
 
+/** @name Constants */
+/**
+ * The styles permitted for the circular progress view.
+ *
+ * You can set and retrieve the current style of progress view through the progressViewStyle property.
+ */
 typedef enum {
 	UICircularProgressViewStyleCircle,
 	UICircularProgressViewStylePie,
@@ -39,9 +45,21 @@ typedef enum {
  */
 @property (nonatomic) float progress;
 
+/**
+ * The color shown for the portion of the progress circle / pie that is filled.
+ */
 @property (nonatomic, retain) UIColor *progressTintColor;
+
+/**
+ * The color shown for the portion of the progress circle / pie that is not filled.
+ */
 @property (nonatomic, retain) UIColor *trackTintColor;
 
+/**
+ * The current graphical style of the receiver.
+ *
+ * The value of this property is a constant that specifies the style of the progress view. The default style is UICircularProgressViewStyleCircle. For more on these constants, see UICircularProgressViewStyle.
+ */
 @property (nonatomic) UICircularProgressViewStyle progressViewStyle;
 
 @end
