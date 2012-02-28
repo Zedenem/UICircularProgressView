@@ -74,10 +74,20 @@
 					<object class="IBUIView" id="544157283">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">298</int>
-						<string key="NSFrame">{{120, 295}, {80, 80}}</string>
+						<string key="NSFrame">{{20, 275}, {140, 140}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="334292126"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIView" id="261327322">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">298</int>
+						<string key="NSFrame">{{206, 302}, {85, 85}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -104,11 +114,11 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="128928557">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="322686364">
 							<int key="type">2</int>
 							<double key="pointSize">13</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="129129261">
+						<object class="NSFont" key="IBUIFont" id="818472910">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">13</double>
 							<int key="NSfFlags">16</int>
@@ -133,16 +143,16 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="128928557"/>
-						<reference key="IBUIFont" ref="129129261"/>
+						<reference key="IBUIFontDescription" ref="322686364"/>
+						<reference key="IBUIFont" ref="818472910"/>
 					</object>
-					<object class="IBUILabel" id="148619318">
+					<object class="IBUILabel" id="152745354">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 245}, {120, 18}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="49660768"/>
+						<reference key="NSNextKeyView" ref="766864487"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -155,8 +165,8 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="128928557"/>
-						<reference key="IBUIFont" ref="129129261"/>
+						<reference key="IBUIFontDescription" ref="322686364"/>
+						<reference key="IBUIFont" ref="818472910"/>
 					</object>
 					<object class="IBUIButton" id="155451319">
 						<reference key="NSNextResponder" ref="774585933"/>
@@ -218,7 +228,7 @@
 						<string key="NSFrame">{{20, 110}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="513264278"/>
+						<reference key="NSNextKeyView" ref="769354645"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -254,8 +264,8 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="128928557"/>
-						<reference key="IBUIFont" ref="129129261"/>
+						<reference key="IBUIFontDescription" ref="322686364"/>
+						<reference key="IBUIFont" ref="818472910"/>
 					</object>
 					<object class="IBUIButton" id="513264278">
 						<reference key="NSNextResponder" ref="774585933"/>
@@ -263,7 +273,7 @@
 						<string key="NSFrame">{{260, 110}, {40, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="769354645"/>
+						<reference key="NSNextKeyView" ref="668089682"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -285,7 +295,7 @@
 						<string key="NSFrame">{{228, 200}, {40, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="148619318"/>
+						<reference key="NSNextKeyView" ref="152745354"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -445,7 +455,7 @@
 						<string key="NSFrame">{{180, 110}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="513264278"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -465,7 +475,7 @@
 						<reference key="IBUIFontDescription" ref="570310382"/>
 						<reference key="IBUIFont" ref="457529295"/>
 					</object>
-					<object class="IBUISlider" id="49660768">
+					<object class="IBUISlider" id="766864487">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{146, 245}, {156, 23}}</string>
@@ -523,11 +533,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">secondCircularProgressView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="261327322"/>
+					</object>
+					<int key="connectionID">67</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">circularProgressView</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="544157283"/>
 					</object>
-					<int key="connectionID">13</int>
+					<int key="connectionID">68</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -640,7 +658,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">setProgress:</string>
-						<reference key="source" ref="49660768"/>
+						<reference key="source" ref="766864487"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -687,9 +705,10 @@
 							<reference ref="130487876"/>
 							<reference ref="441840128"/>
 							<reference ref="632726030"/>
-							<reference ref="148619318"/>
-							<reference ref="49660768"/>
+							<reference ref="152745354"/>
+							<reference ref="766864487"/>
 							<reference ref="544157283"/>
+							<reference ref="261327322"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -706,6 +725,7 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
 						<reference key="object" ref="544157283"/>
+						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -785,12 +805,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">62</int>
-						<reference key="object" ref="49660768"/>
+						<reference key="object" ref="766864487"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">64</int>
-						<reference key="object" ref="148619318"/>
+						<reference key="object" ref="152745354"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">65</int>
+						<reference key="object" ref="261327322"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -830,6 +855,8 @@
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="62.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="64.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="65.CustomClassName">UICircularProgressView</string>
+				<string key="65.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
@@ -837,7 +864,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">64</int>
+			<int key="maxID">68</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -856,6 +883,7 @@
 						<string key="barStyleProgressView">UIProgressView</string>
 						<string key="circularProgressView">UICircularProgressView</string>
 						<string key="defaultStyleProgressView">UIProgressView</string>
+						<string key="secondCircularProgressView">UICircularProgressView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="barStyleProgressView">
@@ -869,6 +897,10 @@
 						<object class="IBToOneOutletInfo" key="defaultStyleProgressView">
 							<string key="name">defaultStyleProgressView</string>
 							<string key="candidateClassName">UIProgressView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="secondCircularProgressView">
+							<string key="name">secondCircularProgressView</string>
+							<string key="candidateClassName">UICircularProgressView</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

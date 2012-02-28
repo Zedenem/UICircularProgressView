@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F3A224614FD328B00836116 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
 		5FB82EA014FBB505009DD3E3 /* UICircularProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICircularProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB82EA414FBB505009DD3E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FB82EA614FBB505009DD3E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +54,7 @@
 		5FB82E9514FBB505009DD3E3 = {
 			isa = PBXGroup;
 			children = (
+				5F3A224614FD328B00836116 /* AppledocSettings.plist */,
 				5FDB084114FCE23400A3E509 /* UICircularProgressView */,
 				5FB82EAA14FBB505009DD3E3 /* Test Project */,
 				5FB82EA314FBB505009DD3E3 /* Frameworks */,

@@ -30,6 +30,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIProgressView *barStyleProgressView;
 @property (unsafe_unretained, nonatomic) IBOutlet UIProgressView *defaultStyleProgressView;
 @property (unsafe_unretained, nonatomic) IBOutlet UICircularProgressView *circularProgressView;
+@property (unsafe_unretained, nonatomic) IBOutlet UICircularProgressView *secondCircularProgressView;
 
 - (void)resetProgress;
 - (void)incrementProgress:(NSTimer *)timer;
@@ -41,6 +42,7 @@
 @synthesize barStyleProgressView = _barStyleProgressView;
 @synthesize defaultStyleProgressView = _defaultStyleProgressView;
 @synthesize circularProgressView = _circularProgressView;
+@synthesize secondCircularProgressView = _secondCircularProgressView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,6 +53,7 @@
     [self setBarStyleProgressView:nil];
     [self setDefaultStyleProgressView:nil];
 	[self setCircularProgressView:nil];
+	[self setSecondCircularProgressView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -65,6 +68,7 @@
 
 - (IBAction)setProgressTintColor:(UIButton *)sender {
 	[self.circularProgressView setProgressTintColor:sender.titleLabel.textColor];
+	[self.secondCircularProgressView setProgressTintColor:sender.titleLabel.textColor];
 	if ([self.barStyleProgressView respondsToSelector:@selector(setProgressTintColor:)]) {
 		[self.barStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
 		[self.defaultStyleProgressView setProgressTintColor:sender.titleLabel.textColor];
@@ -73,6 +77,7 @@
 
 - (IBAction)setTrackTintColor:(UIButton *)sender {
 	[self.circularProgressView setTrackTintColor:sender.titleLabel.textColor];
+	[self.secondCircularProgressView setTrackTintColor:sender.titleLabel.textColor];
 	if ([self.barStyleProgressView respondsToSelector:@selector(setTrackTintColor:)]) {
 		[self.barStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
 		[self.defaultStyleProgressView setTrackTintColor:sender.titleLabel.textColor];
@@ -81,10 +86,12 @@
 
 - (IBAction)setProgressViewStyleToCircle {
 	[self.circularProgressView setProgressViewStyle:UICircularProgressViewStyleCircle];
+	[self.secondCircularProgressView setProgressViewStyle:UICircularProgressViewStyleCircle];
 }
 
 - (IBAction)setProgressViewStyleToPie {
 	[self.circularProgressView setProgressViewStyle:UICircularProgressViewStylePie];
+	[self.secondCircularProgressView setProgressViewStyle:UICircularProgressViewStylePie];
 }
 
 
@@ -100,6 +107,7 @@
 	[self.barStyleProgressView setProgress:0];
 	[self.defaultStyleProgressView setProgress:0];
 	[self.circularProgressView setProgress:0];
+	[self.secondCircularProgressView setProgress:0];
 }
 
 - (void)incrementProgress:(NSTimer *)timer {
@@ -109,11 +117,13 @@
 	[self.barStyleProgressView setProgress:self.barStyleProgressView.progress+kStep];
 	[self.defaultStyleProgressView setProgress:self.defaultStyleProgressView.progress+kStep];
 	[self.circularProgressView setProgress:self.circularProgressView.progress+kStep];
+	[self.secondCircularProgressView setProgress:self.secondCircularProgressView.progress+kStep];
 }
 - (IBAction)setProgress:(UISlider *)sender {
 	[self.barStyleProgressView setProgress:sender.value];
 	[self.defaultStyleProgressView setProgress:sender.value];
 	[self.circularProgressView setProgress:sender.value];
+	[self.secondCircularProgressView setProgress:sender.value];
 }
 
 @end
