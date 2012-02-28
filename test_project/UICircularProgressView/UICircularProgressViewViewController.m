@@ -93,7 +93,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	[NSTimer scheduledTimerWithTimeInterval:kUpdateInterval target:self selector:@selector(incrementProgress:) userInfo:nil repeats:YES];
+	//[NSTimer scheduledTimerWithTimeInterval:kUpdateInterval target:self selector:@selector(incrementProgress:) userInfo:nil repeats:YES];
 }
 
 - (void)resetProgress {
@@ -109,6 +109,11 @@
 	[self.barStyleProgressView setProgress:self.barStyleProgressView.progress+kStep];
 	[self.defaultStyleProgressView setProgress:self.defaultStyleProgressView.progress+kStep];
 	[self.circularProgressView setProgress:self.circularProgressView.progress+kStep];
+}
+- (IBAction)setProgress:(UISlider *)sender {
+	[self.barStyleProgressView setProgress:sender.value];
+	[self.defaultStyleProgressView setProgress:sender.value];
+	[self.circularProgressView setProgress:sender.value];
 }
 
 @end
